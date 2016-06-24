@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tutor50.TutorEntry">
+	<ContentPage.Content>
+		<StackLayout Padding="40" Spacing="20">
+			<Label Text="Post Ad" HorizontalOptions="Center" />
+			<Entry x:Name="FirstName" Placeholder="First Name" />
+			<Entry x:Name="LastName" Placeholder="Last Name" />
+			<Entry x:Name="Email" Placeholder="Email" Keyboard="Url" />
+			<Entry x:Name="Phone" Placeholder="Phone" Keyboard="Telephone" />
+			<Entry x:Name="Languages" Placeholder="Languages" />
+			<Entry x:Name="Rate" Placeholder="$" Keyboard="Numeric" />
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+				<Button Text="Post" Clicked="OnPost" BackgroundColor="#00b9ad" TextColor="White" WidthRequest="100" HorizontalOptions="Start" />
+				<Button Text="Cancel" Clicked="OnCancel" TextColor="Red" WidthRequest="100" HorizontalOptions="End" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

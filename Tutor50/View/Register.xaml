@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tutor50.Register" BackgroundColor="#333">
+	<ContentPage.Content>
+		<StackLayout Padding="40" Spacing="20" BackgroundColor="#00b9ad">
+			<Label Text="Register" HorizontalOptions="Center" />
+			<Entry x:Name="Email" Placeholder="Email" Keyboard="Url" />
+			<Entry x:Name="Password" Placeholder="Password" IsPassword="true"/>
+			<Entry x:Name="ConfirmPassword" Placeholder="Confirm Password" IsPassword="true"/>
+			<Entry x:Name="FirstName" Placeholder="First Name" />
+			<Entry x:Name="LastName" Placeholder="Last Name" />
+			<Entry x:Name="Phone" Placeholder="Phone" Keyboard="Telephone" />
+			<Entry x:Name="City" Placeholder="City" />
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+				<Button Text="Register" Clicked="RegisterClicked" BackgroundColor="#00b9ad" TextColor="White" WidthRequest="100" HorizontalOptions="Start" />
+				<Button Text="Cancel" Clicked="OnCancel" TextColor="Red" WidthRequest="100" HorizontalOptions="End" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

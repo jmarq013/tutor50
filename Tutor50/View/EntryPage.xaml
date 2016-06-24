@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tutor50.EntryPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0, 0, 0, 0" Android="0, 0, 0, 0" WinPhone="0, 0, 0, 0" />
+	</ContentPage.Padding>
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="Center">
+			<Image Source="IC-Logo-e1446176203417.png" Aspect="AspectFit" VerticalOptions="Start" />
+			<!--<Label Text="Doceo" HorizontalOptions="Center" VerticalOptions="Start" FontSize="25" />-->
+			<Button Text="Sign In" HorizontalOptions="Center" Clicked="OnSignIn" />
+			<Button Text="Register" HorizontalOptions="Center" Clicked="OnRegister" />
+			<Button Text="Guest" HorizontalOptions="Center" Clicked="Guest" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

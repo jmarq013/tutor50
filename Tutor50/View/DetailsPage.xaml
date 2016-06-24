@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tutor50.DetailsPage">
+	<ContentPage.Content>
+		<StackLayout Padding="20" Spacing="15">
+			<Label Text="{Binding FullName}" HorizontalTextAlignment="Center" FontSize="25"/>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Languages:" TextColor="#00b9ad" />
+				<Label Text="{Binding Languages}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Email:" TextColor="#00b9ad" />
+				<Label Text="{Binding Email}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Phone:" TextColor="#00b9ad" />
+				<Label x:Name="Phone" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Rate:" TextColor="#00b9ad" />
+				<Label Text="{Binding Rate, StringFormat='{0:C}'}" />
+			</StackLayout>
+			<Button Text="Request Tutor" BackgroundColor="#00b9ad" TextColor="White" WidthRequest="40" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
